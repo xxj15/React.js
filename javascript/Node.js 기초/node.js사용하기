@@ -1,0 +1,21 @@
+프로젝트 : 특정 목적을 갖는 프로그램의 단위 
+node.js에서는 프로젝트를 '패키지'라고 부름 
+
+패키지 : Node.js에서 사용하는 프로그램의 단위
+
+
+** 시작하기
+- 패키지를 생성하기 위해 터미널 켜기
+
+npm init : 터미널에 새로운 패키지를 초기화해달라 
+
+** section03에 설치함. 
+
+** 터미널에 node 하고 실행시키고 싶은 파일 입력하면 터미널에 뜸!
+
+** npm run start 명령어 사용할 수 있게 해주는 매크로 
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" :"node src/index.js"
+  }, 
+
