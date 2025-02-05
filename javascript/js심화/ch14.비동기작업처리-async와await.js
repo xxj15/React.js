@@ -47,3 +47,6 @@ async function printData() {
 }
 
 printData();
+
+// await와 async를 사용하면, 비동기 작업을 마치 동기작업을 처리하듯 간단하게 코드를 만들어줌
+// (주의) await 함수는 async가 붙지 않은 함수에서 사용하면 오류가 발생생
