@@ -1,0 +1,45 @@
+React로 만든 웹 서비스들은 주로 React APP 이라고 부름.
+
+리액트도 NPM에 등록된 JS 라이브러리.
+
+<REACT APP 시작하기>
+
+1. Node.js 패키지 생성
+2. React 라이브러리 설치
+3. 기타 도구 설치 및 설정 (입문자에게 어려운 과정)
+
+- 대신, Vite라는 차세대 프론트엔드 개발 툴을 이용해서 기본 설정이 완료된 React App 한번에 가능.
+  npm create vite@latest
+
+npm create vite@latest 입력시 새로운 파일 생김
+
+- package.json에서 devDependencies: 오직 개발할 때에만 사용되는 라이브러리들이 저장됨.
+  ex. 개발시에 활용할 테스트 도구
+  배포시에는 개발용 라이브러리들은 포함되지 않는다
+
+하지만, node_modules나 package-lock.json이 없음
+
+ctrl + J로 터미널 열고
+직접 설치! - npm i
+
+엄청나게 많은 라이브러리들이 설치됨. (이걸 하나하나 우리가 설치하기 힘드니까 vite 를 이용하는 것)
+
+<만들어진 구조 확인하기>
+
+public 폴더 : svg나 png, jpg 같은 이미지 파일들을 보관하거나 폰트나 동영상 같은 코드가 아닌 정적인 파일들을 저장하는 보관소
+
+src 폴더 : 실제로 작성하게 될 react나 js코드를 보관하는 폴더
+
+- .jsx 확장자 : 리액트 코드가 저장되어있음
+
+eslintrc.cjs : eslint라는 도구의 설정파일일
+ESlint는 개발자들 사이에 코드 스타일을 맞추도록 도와줌
+
+.gitignore : github에 올릴 때 올리면 안되는거 명시해둠
+
+index.html : 리액트앱의 기본 틀 역할을 하는 html이 있는 코드
+
+package.json - scripts : 이 리액트 앱을 실행시킬 수 있는 명령어들이 있음
+
+- "dev" : "vite" ; - 리액트 앱을 개발용으로 실행시킬 수 있는 명령어
+- npm run dev 명령 입력 - vite가 react 앱을 작동시켜줌.
