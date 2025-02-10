@@ -25,5 +25,6 @@ module.exports = {
     "react/no-unknown-property": "off", // 알 수 없는 속성 관련 경고 끄기
     "react/jsx-no-undef": "off", // 정의되지 않은 JSX 관련 경고 끄기
     "react/react-in-jsx-scope": "off", // React가 scope에 없다는 경고 끄기
+    "import/no-unresolved": "off",
   },
 };
