@@ -5,11 +5,22 @@
 // 구조분해할당 이용!
 // props라는 객체를 매개변수로 받아서 특정 속성을 꺼내고 기본값도 설정하는 방법
 const Buttons = ({ color = "black", text, children }) => {
-  console.log("props:", { color, text });
-  const colorText = color.toUpperCase(); // color 기본값이 항상 설정되므로 안전
+  // 이벤트 객체
+  const onClickButton = (e) => {
+    console.log(e);
+    console.log(text);
+  };
 
+  const colorText = color.toUpperCase(); // color 기본값이 항상 설정되므로 안전
+  // 이벤트 핸들러
+  // 1. onCLick 이라는 속성에 익명함수로써 설정
+  // 2. component 내부에 화살표함수 따로 선언 (ex. const onClickButton)
   return (
-    <button style={{ color }}>
+    <button
+      onClick={onClickButton}
+      // onMouseEnter = {onClickButton}
+      style={{ color }}
+    >
       {text} - {colorText}
       {children}
     </button>

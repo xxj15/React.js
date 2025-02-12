@@ -1,0 +1,8 @@
+State : 현재 가지고 있는 형태나 모양 
+ - 변화할 수 있는 동적인 값 
+
+React 컴포넌트는 모두 state를 가질 수 있음 . 
+state를 갖는 컴포넌트는 state 값에 따라 렌더링되는 UI가 결정된다.
+
+컴포넌트가 다시 렌더링되는것 = Re-Render / Re-rendering이라고 부름
+

@@ -1,3 +1,43 @@
 props를 이용하면 컴포넌트를 마치 함수를 호출하듯이 전달하는 값에 따라서 각각 다른 UI를 렌더링하도록 만들 수 있음 
 
 props : 부모 컴포넌트에서 자식 컴포넌트로만 전달 가능 
+
+
+function App() {
+  return (
+    <>
+      <Button text={"메일"} img={"mail.png"} />
+      <Button text={"카페"} img={"cafe.png"} />
+      <Button text={"블로그"} img={"blog.png"} />
+    </>
+  );
+}
+
+
+App 컴포넌트는 여러 개의 Button 컴포넌트를 포함하고 있음.
+여기서 Button 컴포넌트는 App 내부에서 사용되므로 App이 부모 컴포넌트
+
+Button 컴포넌트는 App 컴포넌트로부터 text와 img라는 값을 받는데, 
+text와 img 같은 값을 props라고 부름
+
+props: 부모 컴포넌트에서 자식 컴포넌트로 값을 전달하는 방식
+
+(쉽게 말하면)
+App 컴포넌트는 Button 컴포넌트를 여러 개 사용하고 있다다
+이때 Button 컴포넌트에 text와 img라는 값을 넘겨주고 있다다
+즉, Button 컴포넌트가 text와 img를 props로 받아야 하는 상황임. 
+
+자식 컴포넌트 - Button 컴포넌트 
+function Button(props) {
+  return (
+    <button>
+      <img src={props.img} alt={props.text} />
+      {props.text}
+    </button>
+  );
+}
+
+🔥 props를 이해하는 핵심
+부모(App)가 자식(Button)에게 값을 넘겨준다.
+Button은 props를 통해 부모가 준 값을 사용한다.
+props는 단방향 데이터 흐름을 가진다. (부모 → 자식 방향으로만 전달됨)
