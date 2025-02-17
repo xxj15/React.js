@@ -1,0 +1,14 @@
+React Hooks : 클래스 컴포넌트의 기능을 함수 컴포넌트에서도 이용할수 있도록 해줌
+
+리액트 초창기 - 클래스를 사용해서 컴포넌트를 많이 만들었으나,
+Hook이 새이고 나서부터는 함수 컴포넌트를 더 많이 사용
+
+Class컴포넌트 : 모든 기능을 이용할 수 있음 (State, Ref, etc..)
+ - 문법이 복잡함!! 
+
+Class 컴포넌트 - React Hooks -> Function 컴포넌트 
+
+useState, useRef는 모두 React Hooks임!! 
+이름 앞에 use가 붙음. 
+
+React Hooks 약 20개가 넘음
