@@ -1,0 +1,18 @@
+1. 마운트 
+useEffect(()=>{
+    console.log("mount");
+}, [])
+
+useEffect 한 번 호출해주고, 배열에는 빈 배열 
+
+-> 마운트 될 때만 최초로 한 번 실행되고, 
+이후에는 아무리 값을 변경해도 메시지 출력X 
+
+2. 업데이트 
+useEffect(()=>{
+     console.log("update");
+})
+
+deps 생략. 
+mount 시점에 한 번 실행되고, 
+컴포넌트가 리렌더링될떄마다 계속 실행됨. 
